@@ -1,0 +1,338 @@
+/*
+	* Globals
+	*#ff8c00
+*/
+
+:root {
+	--jdb-orange: #ff8c00;
+	--jdb-green: #393;
+}
+
+html{
+	position: relative;
+	min-height: 100%;	
+}
+
+body {
+	font-family: Arial, "Helvetica", Arial, sans-serif;
+	color: #555;
+	margin-bottom: 60px;	
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-top: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+
+
+/*
+	* Override Bootstrap's default container.
+*/
+
+@media (min-width: 1200px) {
+	.container {
+		width: 970px;
+	}
+}
+
+#progressbarcontainer {  	
+	width: 100%;
+	margin-bottom: 35px;
+	height: 8px;
+	position: relative;
+}
+
+
+.progressbar-text{
+	
+	font-weight: bold;
+}
+
+
+/*
+	* Masthead for nav
+*/
+
+.navbar-default .navbar-collapse, .navbar-default, .navbar-form {
+	background-color: #ffffff;
+	color: black;
+	border: 0px;
+}
+
+.blog-masthead {
+	background-color: #ffffff;
+	color: black;
+	border-bottom: 5px solid var(--jdb-orange);
+	float: left;
+	width: 100%;
+	min-height: 120px;
+	margin-bottom: 5px;
+}
+
+/* Nav links */
+.blog-nav-item {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	font-weight: 500;
+	color: black;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+	color: #fff;
+}
+.blog-nav .active:after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -5px;
+	vertical-align: middle;
+	content: " ";
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid;
+	border-left: 5px solid transparent;
+}
+
+.navbar-nav{
+	padding-top: 30px;
+}
+
+
+/*
+	* Blog name and description
+*/
+
+.blog-header {
+	padding-top: 20px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+.blog-title {
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: 60px;
+	font-weight: normal;
+}
+.blog-description {
+	font-size: 20px;
+	color: #999;
+}
+.blog-description-small {
+	font-size: 16px;
+	color: #999;
+}
+
+
+/*
+	* Main column and sidebar layout
+*/
+
+.blog-main {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+	padding: 15px;
+	margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+	padding: 15px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+	margin-bottom: 0;
+}
+
+/* Pagination */
+.pager {
+	margin-bottom: 60px;
+	text-align: left;
+}
+.pager > li > a {
+	width: 140px;
+	padding: 10px 20px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+.google-autocomplete-fields{
+	display: none;
+}
+
+#jdb-form-submit-success{
+	display: none;
+	width: 100%;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+	color: var(--jdb-green);
+}
+
+#jdb-check{
+	font-size: 100px;
+}
+
+#jdbForm2{
+	display: none;
+}
+
+.form-header{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/*
+	* Blog posts
+*/
+
+.blog-post {
+	margin-bottom: 60px;
+}
+.blog-post-title {
+	margin-bottom: 5px;
+	font-size: 40px;
+}
+.blog-post-meta {
+	margin-bottom: 10px;
+	color: #999;
+}
+
+#jdbFormSubmit{
+	width: 100%;
+	background-color: var(--jdb-orange);
+	color: white;
+	font-size: 1em;
+}
+
+#jdbFormSubmit2{
+	width: 100%;
+	background-color: var(--jdb-orange);
+	color: white;
+	font-size: 1em;
+}
+
+#jdbVehiclesBtn{
+	background-color: var(--jdb-green);
+	color: white;
+}
+
+#jdbGetMeApprovedBtn{
+	background-color: var(--jdb-orange);
+	color: white;
+}
+
+#jdbConsentLabel{
+	font-size: .75em;
+}
+
+.jdb-form-container{
+	padding-bottom: 20px;
+}
+
+#address{
+	/*display:none*/
+}
+
+/*
+	* Footer
+*/
+
+.glyphicon-asterisk {
+	font-size: 7px;
+	color: #a94442;	
+	top: -8px;
+	padding-left: 5px;
+}
+
+.lead {
+	margin-bottom: 10px;
+}
+
+.blog-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;	
+	color: #999;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+	height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#locationField, #controls {
+	position: relative;
+	
+}
+
+.jdb-address-error{
+	padding-top: 15px;
+}
+
+.jdb-address-field{
+	margin-bottom: 25px;
+}
+#autocomplete {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+.label {
+	text-align: right;
+	font-weight: bold;
+	width: 100px;
+	color: #303030;
+}
+#address {        
+	width: 480px;
+	padding-right: 2px;
+}
+#address td {
+	font-size: 10pt;
+}
+.field {
+	width: 99%;
+}
+.slimField {
+	width: 80px;
+}
+.wideField {
+	width: 200px;
+}
+#locationField {
+	height: 20px;
+	margin-bottom: 2px;
+	}		

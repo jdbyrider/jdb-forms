@@ -1,0 +1,4 @@
+data = {
+	"formType": "singlePage",
+	"progressBar": true
+}

@@ -17,110 +17,7 @@
    </head>
    <body>
       <div class="container jdb-form-container">
-         <div class="blog-header">
-            <h1 class="blog-title">Test Drive</h1>
-			<div id="progressbarcontainer"></div>
-			<!--<p class="lead blog-description">A demo for a Gravity Forms replacement.</p>-->
-            <p class="lead blog-description-small"><span class="glyphicon glyphicon-asterisk" style="top: -4px"></span> denotes a required field</p>
-         </div>
-         <div class="row">
-            <div class="col-xs-12 blog-main">
-               <div id="jdb-form-wrapper">
-                  <form data-toggle="validator" role="form" id="jdbForm">
-                     <div class="form-header">Step 1: Just a bit of information</div>
-                     <div class="form-group">
-                        <label for="firstName">First Name<span class="glyphicon glyphicon-asterisk"></label>							
-                        <input type="text" class="form-control" id="firstName" placeholder="" data-error="First Name is required" required>	</input>							
-                        <div class="help-block with-errors"></div>
-                     </div>
-                     <div class="form-group">
-                        <label for="lastName">Last Name<span class="glyphicon glyphicon-asterisk"></label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" data-error="Last Name is required" required></input>	
-                        <div class="help-block with-errors"></div>
-                     </div>
-                     <div class="form-group">
-                        <label for="email">Email<span class="glyphicon glyphicon-asterisk"></label>
-                        <input type="email" class="form-control" id="email" placeholder="" data-error="Invalid email address" required></input>	
-                        <div class="help-block with-errors"></div>
-                     </div>
-                     <div class="form-group">
-                        <label for="phoneNum">Phone<span class="glyphicon glyphicon-asterisk"></label>
-                        <input type="text" data-minlength="12" class="form-control input-medium bfh-phone" id="phoneNum" placeholder="" data-format="ddd ddd-dddd" data-error="Invalid phone number" required></input>	
-                        <div class="help-block with-errors"></div>
-                     </div>					
-                     <div class="form-group">
-                        <label for="jdbConsent">Terms of Service<span class="glyphicon glyphicon-asterisk"></label>
-                        <div class="checkbox">
-                           <label id="jdbConsentLabel">
-                           <input type="checkbox" id="jdbConsent" data-error="You must consent to our Terms of Service" checked="checked" required>
-                           Consent for contact: I read this E-SIGN Consent and agree to its terms.
-                           By checking this box and clicking “Submit Now,” I authorize J.D. Byrider to send marketing calls and texts to the telephone number(s) I provided using an autodialer and/or a prerecorded message. I am not required to give this authorization as a condition of any purchase.
-                           If I do not wish to provide this consent, I will not check this box.
-                           </label>
-                           <div class="help-block with-errors"></div>
-                        </div>
-                     </div>
-                     <button type="submit" class="btn btn-primary" id="jdbFormSubmit">Submit</button>
-                  </form>
-               </div>
-               <!-- <div id="jdb-form-submit-success"> -->
-                  <!-- <i class="fa fa-check-circle-o" id="jdb-check" aria-hidden="true"></i> -->
-                  <!-- <div>We have received your information. Thank you!</div> -->
-               <!-- </div> -->
-               <form data-toggle="validator" role="form" id="jdbForm2">
-                  <div class="form-header">Step 2: Just a bit more</div>
-                    <div class="form-group jdb-address-field">
-                        <label for="autocomplete">Address<span class="glyphicon glyphicon-asterisk"></label>
-                        <div id="locationField">
-                           <input id="autocomplete" class="form-control" placeholder="" type="text" data-delay="2000" data-error="Address is required" required></input>
-                        </div>
-                        <div class="jdb-address-error help-block with-errors"></div>
-                     </div>
-                     <div class="google-autocomplete-fields">
-                        <div class="form-group">
-                           <label for="street_number">Street Number</label>
-                           <input class="field form-control address1_1" id="street_number" disabled="true"></input>						
-                        </div>
-                        <div class="form-group">	
-                           <label for="route">Street Name</label>
-                           <input class="field form-control address1_2" id="route" disabled="true" required></input>							
-                        </div>
-                        <!-- Note: Selection of address components in this example is typical.
-                           You may need to adjust it for the locations relevant to your app. See
-                           https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
-                           -->
-                        <div class="form-group">
-                           <label for="locality">City</label>
-                           <input class="field form-control city" id="locality" disabled="true" required></input>							
-                        </div>
-                        <div class="form-group">
-                           <label for="administrative_area_level_1">State</label>
-                           <input class="field form-control stateProvince" id="administrative_area_level_1" disabled="true"></input>							
-                        </div>
-                        <div class="form-group">
-                           <label for="postal_code">Zip Code</label>
-                           <input class="field form-control zipPostalCode" id="postal_code" disabled="true" required></input>								
-                        </div>
-                        <div class="form-group">
-                           <label for="country">Country</label>
-                           <input class="field form-control" id="country" disabled="true"></input>							
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <label for="jdbConsent">Terms of Service<span class="glyphicon glyphicon-asterisk"></label>
-                        <div class="checkbox">
-                           <label id="jdbConsentLabel">
-                           <input type="checkbox" id="jdbConsent2" data-error="You must consent to our Terms of Service" checked="checked" required>
-								I grant my written permission for J.D. Byrider and its affiliate CNAC, using the information I have provided, to obtain and use consumer report information to show prequalified financing options that may be available to me. I understand this type of promotional inquiry or “soft pull” of consumer report information will not affect my credit score.
-                           </label>
-                           <div class="help-block with-errors"></div>
-                        </div>
-					</div>
-                  <button type="submit" class="btn btn-primary" id="jdbFormSubmit2">Submit</button>
-               </form>
-            </div>
-            <!-- /.blog-main -->
-         </div>
+ 
          <!-- /.row -->
       </div>
       <!-- /.container -->
@@ -183,6 +80,8 @@
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc7RWs2aJ8Tf1eo71mR3rPL76-n7Zr8uc&libraries=places&callback=initAutocomplete"
          async defer></script>		
-      <script src="./js/bundle.min.js"></script>
+	  <script type="text/javascript" src="./jdbFormSettings.json"></script>
+      <script src="./js/bundle.js"></script>
+	  
    </body>
 </html>

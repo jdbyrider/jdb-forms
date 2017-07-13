@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 			},
 			build: {
 				src: 'js/bundle.js',
-				dest: 'dist/js/bundle.min.js'
+				dest: 'js/bundle.min.js'
 			}
 		},
 		cssmin: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: './css/',
 					src: ['*.css', '!*.min.css'],
-					dest: './dist/css',
+					dest: './css/',
 					ext: '.min.css'
 				}],
 			}
@@ -39,6 +39,19 @@ module.exports = function(grunt) {
 					{
 						nonull: true,
 						src: './discover-post.php',
+						dest: './dist/',
+					},					
+					{						
+						src: './js/bundle.min.js',
+						dest: './dist/',
+					},					
+					{						
+						src: './js/bundle.js',
+						dest: './dist/',
+					},
+					{
+						nonull: true,
+						src: './css/jdb-form.min.css',
 						dest: './dist/',
 					},
 					{

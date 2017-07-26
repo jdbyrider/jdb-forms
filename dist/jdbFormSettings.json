@@ -1,4 +1,11 @@
 data = {
-	"formType": "singlePage",
-	"progressBar": true
+	"formType": "twoPage",
+	"branded": "true",
+	"progressBar": true,
+	"singlePage": false,
+	"thankYouPage": "./thankyou.html",
+	"routingValue": "",
+	"attributionValue": "",
+	"testZip": "46032",
+	"cookieLifeTime": 10,
 }
